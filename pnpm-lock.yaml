@@ -22,8 +22,8 @@ importers:
         version: 18.2.0(react@18.3.1)
     devDependencies:
       '@types/chrome':
-        specifier: ^0.0.268
-        version: 0.0.268
+        specifier: ^0.0.279
+        version: 0.0.279
       '@types/node':
         specifier: ^20.14.5
         version: 20.14.5
@@ -86,7 +86,7 @@ importers:
         version: 5.0.7
       tailwindcss:
         specifier: ^3.4.4
-        version: 3.4.4(ts-node@10.9.2(@swc/core@1.5.5)(@types/node@20.14.5)(typescript@5.2.2))
+        version: 3.4.4(ts-node@10.9.2(@types/node@20.14.5)(typescript@5.2.2))
       tslib:
         specifier: ^2.6.3
         version: 2.6.3
@@ -135,7 +135,7 @@ importers:
         version: 0.30.10
       ts-loader:
         specifier: ^9.5.1
-        version: 9.5.1(typescript@5.2.2)(webpack@5.91.0(@swc/core@1.5.5))
+        version: 9.5.1(typescript@5.2.2)(webpack@5.91.0)
 
   packages/dev-utils:
     devDependencies:
@@ -900,8 +900,8 @@ packages:
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
 
-  '@types/chrome@0.0.268':
-    resolution: {integrity: sha512-7N1QH9buudSJ7sI8Pe4mBHJr5oZ48s0hcanI9w3wgijAlv1OZNUZve9JR4x42dn5lJ5Sm87V1JNfnoh10EnQlA==}
+  '@types/chrome@0.0.279':
+    resolution: {integrity: sha512-wl0IxQ2OQiMazPZM5LimHQ7Jwd72/O8UvvzyptplXT2S4eUqXH5C0n8S+v8PtKhyX89p0igCPpNy3Bwksyk57g==}
 
   '@types/eslint-scope@3.7.7':
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
@@ -1577,6 +1577,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   esm@3.2.25:
@@ -3319,7 +3320,7 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-  '@types/chrome@0.0.268':
+  '@types/chrome@0.0.279':
     dependencies:
       '@types/filesystem': 0.0.36
       '@types/har-format': 1.2.15
@@ -5347,7 +5348,7 @@ snapshots:
       '@pkgr/core': 0.1.1
       tslib: 2.6.3
 
-  tailwindcss@3.4.4(ts-node@10.9.2(@swc/core@1.5.5)(@types/node@20.14.5)(typescript@5.2.2)):
+  tailwindcss@3.4.4(ts-node@10.9.2(@types/node@20.14.5)(typescript@5.2.2)):
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -5376,16 +5377,14 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  terser-webpack-plugin@5.3.10(@swc/core@1.5.5)(webpack@5.91.0(@swc/core@1.5.5)):
+  terser-webpack-plugin@5.3.10(webpack@5.91.0):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
       terser: 5.31.0
-      webpack: 5.91.0(@swc/core@1.5.5)
-    optionalDependencies:
-      '@swc/core': 1.5.5
+      webpack: 5.91.0
 
   terser@5.31.0:
     dependencies:
@@ -5420,7 +5419,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  ts-loader@9.5.1(typescript@5.2.2)(webpack@5.91.0(@swc/core@1.5.5)):
+  ts-loader@9.5.1(typescript@5.2.2)(webpack@5.91.0):
     dependencies:
       chalk: 4.1.2
       enhanced-resolve: 5.16.1
@@ -5428,7 +5427,7 @@ snapshots:
       semver: 7.6.2
       source-map: 0.7.4
       typescript: 5.2.2
-      webpack: 5.91.0(@swc/core@1.5.5)
+      webpack: 5.91.0
 
   ts-node@10.9.2(@swc/core@1.5.5)(@types/node@20.14.5)(typescript@5.2.2):
     dependencies:
@@ -5622,7 +5621,7 @@ snapshots:
 
   webpack-sources@3.2.3: {}
 
-  webpack@5.91.0(@swc/core@1.5.5):
+  webpack@5.91.0:
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.5
@@ -5645,7 +5644,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(@swc/core@1.5.5)(webpack@5.91.0(@swc/core@1.5.5))
+      terser-webpack-plugin: 5.3.10(webpack@5.91.0)
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
