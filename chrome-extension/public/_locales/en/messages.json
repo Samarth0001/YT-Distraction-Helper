@@ -1,0 +1,10 @@
+{
+  "extensionDescription": {
+    "description": "Extension description",
+    "message": "AI powered smart blocker and filter to improve YouTube addiction."
+  },
+  "extensionName": {
+    "description": "Extension name",
+    "message": "Youtube Distraction Helper"
+  }
+}
