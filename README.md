@@ -1,6 +1,6 @@
 <div align="center">
 <img src="chrome-extension/public/logo.png" alt="logo" width="128" height="128"/>
-<h1> Youtube Distraction Helper
+<h1> Youtube Distraction Helper</h1>
 
 A google chrome extension named YouTube Distraction Helper designed to help users stay focused while using YouTube.
 It allows users to specify their content preferences, filtering out videos and shorts that don't align with their interests.
